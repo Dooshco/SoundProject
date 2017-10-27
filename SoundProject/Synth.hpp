@@ -117,7 +117,11 @@ namespace Synth
 	///
 	/// This function uses case-in
 	///
-	/// \param 
+	/// \param buffer is address to SoundBuffer where the result will be stored
+	/// \param envelope structure defining the ADSR Envelope
+	/// \param tones vector of tone structures to be stacked
+	/// \param master volume for the volume of sound
+	/// \param sample rate to set quality of sound
 	///
 	/// \return True if the sound was generate, false if it failed
 	///
@@ -163,9 +167,21 @@ namespace Synth
         return bSuccess;
     }
 
-    //////////////////////////////////////////////////////////////////////////////
-    // Overload for single tone parameter, just creating vector and call main generate
-    bool generate(sf::SoundBuffer* buffer, sEnvelope env, sTone tone, unsigned uMasterVol, unsigned uSampleRate)
+	////////////////////////////////////////////////////////////
+	/// \brief Generate sound and store in SoundBuffer
+	///
+	/// This function uses case-in
+	///
+	/// \param buffer is address to SoundBuffer where the result will be stored
+	/// \param envelope structure defining the ADSR Envelope
+	/// \param tone structure for simple tone definition
+	/// \param master volume for the volume of sound
+	/// \param sample rate to set quality of sound
+	///
+	/// \return True if the sound was generate, false if it failed
+	///
+	////////////////////////////////////////////////////////////
+	bool generate(sf::SoundBuffer* buffer, sEnvelope env, sTone tone, unsigned uMasterVol, unsigned uSampleRate)
     {
         std::vector<sTone> tones;
         tones.push_back(tone);
