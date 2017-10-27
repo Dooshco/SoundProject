@@ -1,0 +1,50 @@
+	
+	//Synth::sEnvelope env = { 0.05, 1.0, 2.0, 0.1, 1.0, 0.95 };					// HARMONICA
+	//Synth::sTone base = { Synth::OSC_SQUARE, 440.0, 440.0, 0.65 };				// A4
+	//Synth::sTone harmonics = { Synth::OSC_SQUARE, 880.0, 880.0, 0.3 };			// A5
+	//Synth::sTone noise = { Synth::OSC_NOISE, 880.0, 880.0, 0.05 };				// a bit of noise
+
+	//std::vector <Synth::sTone> tone;
+	//tone.push_back(base);
+	//tone.push_back(harmonics);
+	//tone.push_back(noise);
+
+	//Synth::generate(&soundBuffer, env, tone, 20000, 44100);
+
+
+	//// BEAT1
+	//Synth::sEnvelope env = { 0.03, 0.0, 0.09, 0.03, 1.0, 1.0 };
+	//Synth::sTone baseTone = { Synth::OSC_SQUARE, 80.0, 80.0, 0.50 };
+	//Synth::generate(&soundBuffer, env, baseTone, 10000, 22050);
+	//testSound.setBuffer(soundBuffer);
+
+	//// BEAT2
+	//Synth::sEnvelope env = { 0.03, 0.0, 0.09, 0.03, 1.0, 1.0 };
+	//Synth::sTone baseTone = { Synth::OSC_SQUARE, 70.0, 70.0, 0.50 };
+	//Synth::generate(&soundBuffer, env, baseTone, 10000, 22050);
+	//testSound.setBuffer(soundBuffer);
+
+
+	//// EXPLOSION
+	//Synth::sEnvelope env = { 0.00, 0.0, 0.0, 0.1, 1.0, 1.0 };
+	//Synth::sTone baseTone = { Synth::OSC_SAW_DIG, 80.0, 80.0, 0.1 };
+	//Synth::sTone noise = { Synth::OSC_NOISE, 880.0, 880.0, 0.8 };				// a bit of noise
+
+	//std::vector <Synth::sTone> tone;
+	//tone.push_back(baseTone);
+	//tone.push_back(noise);
+
+	//Synth::generate(&soundBuffer, env, tone, 30000, 22050);
+	//testSound.setPitch(0.1f);
+	//testSound.setBuffer(soundBuffer);
+
+
+	// THRUST
+	//Synth::sEnvelope env = { 0.00, 0.0, 0.01, 0.0, 1.0, 1.0 };
+	//Synth::sTone noise = { Synth::OSC_NOISE, 880.0, 880.0, 0.2 };
+
+	//Synth::generate(&soundBuffer, env, noise, 30000, 22050);
+	//testSound.setPitch(0.03f);
+	//testSound.setBuffer(soundBuffer);
+
+
